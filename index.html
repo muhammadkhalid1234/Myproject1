@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEMPERATURE CONVERTER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color:black ;text-align: center;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.AHGZ8J2fTvHLUsbRK3Yx8QHaJj&pid=Api&P=0&h=220" style="height: 60px; width: 60px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-info" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="home" class="carousel slide mt-3" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://wallpaperaccess.com/full/9572272.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.freeheightconverter.com/images/temperature-converter.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple1/v4/d0/96/d5/d096d5db-66d6-0b83-3187-2ee2c32afcb3/source/512x512bb.jpg" style="height: 700px;" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  <!--------cards 1-->
+  <div class="row" style="background-color: lightslategray;">
+    <div class="col mt-5">
+      <div class="card" style="width: 18rem;">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.zEAfcaUPohWcCaIsefaawAHaDt&pid=Api&P=0&h=220" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Weather Info</h5>
+          <p class="card-text">Weather information helps us stay prepared for daily conditions by providing updates on temperature, humidity, wind speed, and chances of rain or sunshine. With accurate forecasts, we can plan our day better—whether it’s dressing for a cold morning or staying indoors during a storm</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mt-5">
+      <div class="card" style="width: 18rem;">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.keFb0mFf2OKn2jVm1Nhm4AHaE0&pid=Api&P=0&h=220" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Temperature Facts</h5>
+          <p class="card-text">Temperature is a measure of how hot or cold something is, and it plays a vital role in our daily lives. The most common temperature scales are Celsius, Fahrenheit, and Kelvin. Water freezes at 0°C and boils at 100°C, while in Fahrenheit, those same points are 32°F and 212°F.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mt-5">
+      <div class="card" style="width: 18rem;">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.pXxqx0QPLCVQTT5NF-yKkgHaCx&pid=Api&P=0&h=220" class="card-img-top" style="height: 200px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">About Conversion</h5>
+          <p class="card-text">Temperature conversion is the process of changing a temperature reading from one scale to another, such as from Celsius to Fahrenheit or Kelvin. This is especially useful daily weather updates. For example, to convert Celsius to Fahrenheit, you multiply the temperature by 9/5 and add 32. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Converter Tool -->
+    <div class="container mt-5" style="background-color: lightslategray;">
+      <h2 class="mb-4">Temperature Converter</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <input type="number" id="tempInput" class="form-control" placeholder="Enter Temperature">
+        </div>
+        <div class="col-md-3">
+          <select id="fromUnit" class="form-select">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <select id="toUnit" class="form-select">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary w-100" onclick="convertTemp()">Convert</button>
+        </div>
+      </div>
+      <div class="mt-3">
+        <h4 id="result">Result: </h4>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container mt-5">
+      <h2>About Us</h2>
+      <p>
+        Welcome to TempConvertPro – your go-to solution for quick and accurate temperature conversions!
+      </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container mt-5 mb-5">
+      <h2>Contact Us</h2>
+      <p>For more information, feel free to contact us!</p>
+      <a href="mailto:khalidhabib6433@gmail.com" class="btn btn-success">Email Us</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white p-3">
+      <p>Check Today's Temperature | <a class="text-white" href="mailto:khalidhabib6433@gmail.com">Email Us</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Temperature Conversion Script -->
+    <script>
+      function convertTemp() {
+        const input = parseFloat(document.getElementById("tempInput").value);
+        const from = document.getElementById("fromUnit").value;
+        const to = document.getElementById("toUnit").value;
+        let result = 0;
+
+        if (from === to) {
+          result = input;
+        } else if (from === "C" && to === "F") {
+          result = input * 9/5 + 32;
+        } else if (from === "C" && to === "K") {
+          result = input + 273.15;
+        } else if (from === "F" && to === "C") {
+          result = (input - 32) * 5/9;
+        } else if (from === "F" && to === "K") {
+          result = (input - 32) * 5/9 + 273.15;
+        } else if (from === "K" && to === "C") {
+          result = input - 273.15;
+        } else if (from === "K" && to === "F") {
+          result = (input - 273.15) * 9/5 + 32;
+        }
+
+        document.getElementById("result").innerText = `Result: ${result.toFixed(2)} °${to}`;
+      }
+    </script>
+  </body>
+</html>
